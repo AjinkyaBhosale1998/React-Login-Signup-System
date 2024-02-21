@@ -28,15 +28,27 @@ header img {
   filter: drop-shadow(0 0 4px rgba(31, 42, 42, 0.5));
 }
 
-header h1 {
+.header-button {
   font-family: "Lato", sans-serif;
   font-weight: 700;
-  font-size: 3rem;
-  margin: 1rem 0;
+  font-size: 3.0rem;
+  margin: 2rem 1rem;
   letter-spacing: 0.2rem;
-  color: #2f4444;
+  background-color: #147b73;
+  color: #d9e2f1;
+  cursor: pointer;
+  border: none;
+  border-radius: 0;
+  transition: background-color 0.3s;
 }
 
+.header-button:hover {
+  background-color: #125f56;
+}
+
+.header-button:active {
+  background-color: #0d403a;
+}
 form {
   width: 90%;
   max-width: 30rem;
@@ -130,7 +142,6 @@ fieldset {
   display: flex;
   justify-content: flex-start;
   gap: 1rem;
-  /* flex-direction: column; */
 }
 
 .button {
@@ -142,8 +153,6 @@ fieldset {
   background-color: #147b73;
   color: #d9e2f1;
   cursor: pointer;
-  flex-direction: row;
-  margin-top: 1rem;
 }
 
 .button:hover,
